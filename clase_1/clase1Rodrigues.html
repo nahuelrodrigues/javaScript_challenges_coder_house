@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASE 1 - javaScript</title>
+ 
+</head>
+
+<script>
+//BIENVENIDO
+alert('¡Hola! bienvenido al primer desafío');
+
+//SALUDA
+var nombre = prompt("Cómo te llamás?");
+alert('¡Hola: ' + nombre + '!');
+console.log('NOMBRE: ' + nombre);
+
+//PIDE DATOS
+var año = prompt("en qué año naciste?");
+var pais = prompt('de qué país sos?');
+var direccion = prompt('en donde vivís?');
+//PARSEA Y CALCULA EDAD
+var añoParseado = parseInt(año);
+var añoActual = 2021;
+var edad = añoActual - añoParseado;
+
+//MUESTRA EN CONSOLA
+console.log('EDAD:', añoActual - año);
+console.log('AÑO DE NACIMIENTO: ' + año);
+console.log('PAIS: ' + pais);
+console.log('DIRECCIÓN: ' + direccion);
+
+//MUESTRA EN PANTALLA
+alert('usted se llama ' + nombre + ', nació en el año ' + año + ', tiene ' + edad + ' años de edad, es de ' + pais + ' y vive en ' + direccion + ".");
+alert('ahora vamos a hacer operaciones con dos números')
+
+//INDEXA NÚMEROS
+var x = prompt('elegí un número');
+var y = prompt('elegí otro número');
+
+//PARSEA
+var num1 = parseInt(x);
+var num2 = parseInt(y);
+
+//OPERACIONES
+var suma = num1 + num2;
+var resta = num1 - num2;
+var multiplicar = num1 * num2;
+var dividir = num1 / num2;
+var resto = num1 % num2;
+
+//MUESTRA EN UNA ALERTA LOS RESULTADOS
+alert("La suma de ambos es: " + suma + ". La resta de ambos es: " + resta + ". La multiplicación es : " + multiplicar + ". Su división es: " + dividir + ". El resto de la división es de : " + resto + ".");
+
+//MUESTRA EN CONSOLA TODO
+console.log('este es el primer numero que ingreso:' , num1);
+console.log('este es el segundo numero que ingreso:', num2);
+console.log('esta es la suma de ambos:', suma);
+console.log('esta es la resta de ambos:', resta);
+console.log('esta es la multiplicación de ambos:', multiplicar);
+console.log('esta es la división de ambos:', dividir);
+console.log('esta es el resto de la división es', resto);
+</script>
+<style>
+    li {
+        margin-bottom: 30px;
+    }
+</style>
+<body style="background-color: lightskyblue;">
+    <h1 style="text-align: center; font-weight: bold; color:white; text-shadow: 1px 1px 2px black;">Crear un algoritmo JS simple</h1>
+    <div style="border: solid 3px; background-color:lightpink;">
+        <ul style="line-height: 30px; font-family:Arial, Helvetica, sans-serif; margin-top: 20px;">
+        <li>Pedir nombre mediante prompt y mostrarlo en consola junto con algún texto de saludo. Ejemplo:  ¡Hola, Juan!
+        </li>
+        <li>Pedir un número mediante prompt, parsearlo, sumarlo a otro que se encuentre almacenado en una variable y luego mostrar el resultado en consola.
+        </li>
+        <li>Pedir un texto mediante prompt, luego otro, concatenarlos y mostrarlo en un alerta.
+        </li>
+         </ul>
+    </div>
+</div>
+</body>
+</html>

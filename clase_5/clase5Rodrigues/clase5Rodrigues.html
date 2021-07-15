@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 5</title>
+    <script src="index.js"></script>
+  </head>
+  <style>
+    li {
+      margin-top: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: whitesmoke;
+      text-shadow: 2px 2px 2px black;
+    }
+    h1,
+    li,
+    p,
+    div {
+      font-family: Helvetica, sans-serif;
+    }
+    .padre {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hijo {
+      background: lightgoldenrodyellow;
+      padding: 20px 20px;
+      width: 600px;
+      height: 520px;
+      box-shadow: 2px 2px 2px black;
+    }
+    body {
+      background: #ffafbd; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #ffc3a0,
+        #ffafbd
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #ffc3a0,
+        #ffafbd
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+  </style>
+  <body>
+    <h1>Clase 5 - Objetos</h1>
+    <div class="padre">
+      <div class="hijo">
+        <h2>>> Consigna:</h2>
+        <p>
+          A partir de los ejemplos mostrados la primera clase, y en función del
+          tipo de simulador que hayas elegido, deberás:
+          <li>
+            Crear al menos un objeto para controlar el funcionamiento de tu
+            simulador.
+          </li>
+          <li>Incorporarle sus propiedades y su constructor.</li>
+          <li>
+            Invocar a ese objeto en algún momento donde el usuario realice
+            alguna acción.
+          </li>
+          <li>Utilizar sus mètodos.</li>
+        </p>
+
+        <h2>>>Aspectos a incluir en el entregable:</h2>
+        <p>
+          Archivo HTML y Archivo JS, referenciado en el HTML por etiqueta script
+          src="js/miarchivo.js" que incluya la definición de un algoritmo en
+          JavaScript que emplee objetos para elementos con propiedades y mètodos
+          comunes.
+        </p>
+
+        <h2>>>Ejemplos:</h2>
+        <p>
+          Algunos objetos a identificar que forman parte del simulador pueden
+          ser: Producto, Persona,Libro, Auto, Comida, Bebida, Tarea, etc.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

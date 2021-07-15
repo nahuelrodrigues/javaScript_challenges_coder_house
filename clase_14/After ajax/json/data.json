@@ -1,0 +1,35 @@
+[
+    {
+        "titulo" :"Celular Samsung",
+        "precio": "35000",
+        "img": "https://via.placeholder.com/400",
+        "id":"1001"
+    },
+    {
+        "titulo":"Celular Xiaomi",
+        "precio":"65000",
+        "img": "https://via.placeholder.com/400",
+        "id":"1002"
+    },
+    {
+        "titulo":"Celular Motorola",
+        "precio":"42000",
+        "img": "https://via.placeholder.com/400",
+        "id":"1003"
+    },
+    {
+        "titulo":"Celular Iphone",
+        "precio":"97000",
+        "img": "https://via.placeholder.com/400",
+        "id":"1004"
+    },
+    {
+        "titulo":"Celular Huawei",
+        "precio":"100000",
+        "img": "https://via.placeholder.com/400",
+        "id":"1005"
+    }
+
+
+
+]
