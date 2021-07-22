@@ -13,17 +13,17 @@ class Producto{
     }
 }
 
-// $.getJSON(jsonLocal,function(data,status){
-//     let misDatos = data;
-//     pintarCards(misDatos)
-// }) 
+$.getJSON(jsonLocal,function(data,status){
+    let misDatos = data;
+    pintarCards(misDatos)
+}) 
 
 
 let misDatos = [];
-$.get(urlMl,function(data,status){
+$.get(jsonLocal,function(data,status){
     console.log(data.results)
     for(const dato of data.results){
-        let product = new Producto(dato.id,dato.title,dato.thumbnail,dato.price);
+        let product = new Producto(dato.titulo,dato.title,dato.thumbnail,dato.price);
         misDatos.push(product)
     }
 pintarCards(misDatos)

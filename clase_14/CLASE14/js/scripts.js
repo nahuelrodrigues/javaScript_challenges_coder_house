@@ -3,13 +3,13 @@
 //////////////////////////////////////////
 
 //Declaramos la url que vamos a usar para el GET
-const URLGET = "https://jsonplaceholder.typicode.com/posts"
+// const URLGET = "https://jsonplaceholder.typicode.com/posts"
 
 //Agregamos un botón con jQuery
 // $("body").prepend('<button id="btnGet">GET</button>');
 
 //Escuchamos el evento click del botón agregado
-$("#btnGet").click(() => { 
+// $("#btnGet").click(() => { 
   // USANDO AJAX MODO CALLBACK FUNCTION
   // $.get(URLGET, function (respuesta, estado) {
   //   if(estado === "success"){
@@ -40,24 +40,24 @@ $("#btnGet").click(() => {
   //   }  
   // });
   
-  // USANDO FETCH
-  fetch(URLGET)
-    .then((respuesta) => {
-      console.log(respuesta);
-      return respuesta.json();
-    })
-    .then((respuesta) => {
-      console.log(respuesta);
-      for (const dato of respuesta) {
-        $("body").append(`
-          <div class="posteo" style="border: 1px solid green; text-align: center">
-            <h3>${dato.title}</h3>
-            <p> ${dato.body}</p>
-          </div>
-        `);
-      }
-    });
-});
+//   // USANDO FETCH
+//   fetch(URLGET)
+//     .then((respuesta) => {
+//       console.log(respuesta);
+//       return respuesta.json();
+//     })
+//     .then((respuesta) => {
+//       console.log(respuesta);
+//       for (const dato of respuesta) {
+//         $("body").append(`
+//           <div class="posteo" style="border: 1px solid green; text-align: center">
+//             <h3>${dato.title}</h3>
+//             <p> ${dato.body}</p>
+//           </div>
+//         `);
+//       }
+//     });
+// });
 
 //////////////////////////////////////////
 //  POST
@@ -67,13 +67,13 @@ $("#btnGet").click(() => {
 // const URLGET   = "https://jsonplaceholder.typicode.com/posts"
 
 //Declaramos la información a enviar
-const infoPost =  { nombre: "Ana", profesion: "Programadora" };
+// const infoPost =  { nombre: "Ana", profesion: "Programadora" };
 
 //Agregamos un botón con jQuery
 // $("body").prepend('<button id="btnPost">POST</button>');
 
 //Escuchamos el evento click del botón agregado
-$("#btnPost").click(() => { 
+// $("#btnPost").click(() => { 
   // MODO CALLBACK FUNCTION
   // $.post(URLGET, infoPost , (respuesta, estado) => {
   //   if(estado === "success"){
@@ -103,20 +103,20 @@ $("#btnPost").click(() => {
   // formData.append('nombre', 'Ana');
   // formData.append('profesion', 'Programadora');
   
-  fetch(URLGET, {
-    method: 'post',
-    body: new URLSearchParams(formData) // URLSearchParams => https://developer.mozilla.org/es/docs/Web/API/URLSearchParams
-  })
-    .then((respuesta) => respuesta.json())
-    .then((respuesta) => {
-      console.log(respuesta);
-      $("body").prepend(`
-        <h4>
-          Guardado: ${respuesta.nombre} (${respuesta.id})
-        </h4>
-      `);
-    });
-});
+//   fetch(URLGET, {
+//     method: 'post',
+//     body: new URLSearchParams(formData) // URLSearchParams => https://developer.mozilla.org/es/docs/Web/API/URLSearchParams
+//   })
+//     .then((respuesta) => respuesta.json())
+//     .then((respuesta) => {
+//       console.log(respuesta);
+//       $("body").prepend(`
+//         <h4>
+//           Guardado: ${respuesta.nombre} (${respuesta.id})
+//         </h4>
+//       `);
+//     });
+// });
 
 //////////////////////////////////////////
 //  GETJSON

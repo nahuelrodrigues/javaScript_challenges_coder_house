@@ -1,0 +1,35 @@
+
+// COMENTARIOS NO ESTAN PERMITIDOS EN JSON
+
+// CATEGORIAS
+// CEREALES 
+// LEGUMBRES
+// FRUTOS SECOS
+// SEMILLAS
+
+// IMG
+// COMO PUEDO LEVANTAR UNA IMAGEN ACÁ? VALE LA PENA?
+
+[
+    {
+      "id": 0,
+      "nombre": "batata",
+      "precio": 100,
+      "categoria": "legumbres"
+    },
+    {
+      "id": 1,
+      "nombre": "batata2",
+      "precio": 100
+    },
+    {
+      "id": 2,
+      "nombre": "batata3",
+      "precio": 100
+    },
+    {
+      "id": 3,
+      "nombre": "batata4",
+      "precio": 100
+    }
+  ]
