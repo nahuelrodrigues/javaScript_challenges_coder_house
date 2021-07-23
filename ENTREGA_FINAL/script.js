@@ -37,7 +37,7 @@
 ////////////////// CREANDO OBJETOS Y ARRAYS //////////////////
 
 //declaro variable del precio del envio
-let precioEnvio = 100;
+let precioEnvio = 350;
 
 //clase Producto
 class Producto {
@@ -56,6 +56,46 @@ class Producto {
     return this.precio * 1.21 + precioEnvio;
   }
 }
+
+// ACA IRIA EL GET JSON LOCAL
+
+
+//////////////////////////////////////////
+//  GETJSON
+//////////////////////////////////////////
+// NO NECESITO EL BOTON TIENEN QUE PINTARSE AUTOMATICAMENTE
+
+
+// //Declaramos la url del archivo JSON local
+// const URLJSON = "data/productos.json"
+
+// //Agregamos un botón con jQuery
+// $("body").prepend('<button id="btn1">JSON</button>');
+
+// //Escuchamos el evento click del botón agregado
+// $("#btn1").click(() => { 
+// $.getJSON(URLJSON, function (respuesta, estado) {
+//     if(estado === "success"){
+//       let misDatos = respuesta;
+
+//       // LIMPIAR
+//       const hijos = $('.dato');
+//       console.log(hijos);
+//       for (const hijo of hijos) {
+//         hijo.remove();
+//       }
+
+//       // RELLENAR
+//       for (const dato of misDatos) {
+//         $("body").prepend(`
+//           <div class="dato" border: 1px solid green; text-align: center">
+//               <h3>${dato.nombre}</h3>
+//               <p> ${dato.precio}</p>
+//           </div>`)
+//       }  
+//     }
+//     });
+// });
 
 //Declaramos un array de productos para almacenar nuestros objetos
 const productos = [];
@@ -100,7 +140,7 @@ for (const producto of productos) {
 // API DE WHATSAPP
 function wsp(string, numero) {
   window.open(
-    `https://api.whatsapp.com/send?phone=1122709412&text=Hola, estoy interesado en su producto ${string} de $${numero} quisiera saber más información sobre el producto.`,
+    `https://api.whatsapp.com/send?phone=+541122709412&text=Hola, estoy interesado en su producto ${string} de $${numero} quisiera saber más información sobre el producto.`,
     "_blank"
   );
 }

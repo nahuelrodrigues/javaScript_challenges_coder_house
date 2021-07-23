@@ -296,7 +296,17 @@ section {
 }
 
 /* HEADER */
-.header-1,
+.header-1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 3%;
+  background: var(--green);
+}
+.fa-search {
+  font-size: 15px;
+  padding-right: 15px;
+}
 .header-2,
 .header-3 {
   display: flex;
@@ -307,15 +317,15 @@ section {
 }
 
 .header-1 {
-  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0.1rem solid rgba(12, 11, 11, 0.2);
   background: #56ab2f; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
+    to top,
     #a8e063,
     #56ab2f
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
+    to top,
     #a8e063,
     #56ab2f
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -364,7 +374,7 @@ section {
   color: yellow;
 }
 
-.header-2 .search-bar-container {
+.header-1 .search-bar-container {
   display: flex;
   align-items: center;
   width: 50rem;
@@ -373,7 +383,11 @@ section {
   border-radius: 0.5rem;
 }
 
-.header-2 .search-bar-container #search-bar {
+#search-bar {
+  font-size: 1.5rem;
+}
+
+.header-1 .search-bar-container #search-bar {
   width: 100%;
   background: none;
   text-transform: none;
@@ -381,19 +395,19 @@ section {
   font-size: 1.7rem;
 }
 
-.header-2 .search-bar-container #search-bar::placeholder {
+.header-1 .search-bar-container #search-bar::placeholder {
   text-transform: capitalize;
   color: #ddd;
 }
 
-.header-2 .search-bar-container label {
+.header-1 .search-bar-container label {
   color: #fff;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 0 0.5rem;
 }
 
-.header-2 .search-bar-container label:hover {
+.header-1 .search-bar-container label:hover {
   color: yellow;
 }
 
@@ -897,10 +911,6 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
-  }
-
-  .header-1 {
-    display: none;
   }
 
   .deal .row .content .count-down .box {
