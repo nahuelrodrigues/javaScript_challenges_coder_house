@@ -303,10 +303,14 @@ section {
   padding: 2rem 3%;
   background: var(--green);
 }
+#buscar {
+  justify-content: flex-start;
+}
 .fa-search {
   font-size: 15px;
   padding-right: 15px;
 }
+.header-1,
 .header-2,
 .header-3 {
   display: flex;
@@ -942,5 +946,8 @@ section {
   }
   #signup .txt-fld input {
     margin-top: 15px;
+  }
+  .header-1 {
+    display: none;
   }
 }
